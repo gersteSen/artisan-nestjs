@@ -1,0 +1,15 @@
+version: "3.7"
+
+services:
+  database_postgres:
+    container_name: database_postgres
+    image: postgres:14.1
+    restart: unless-stopped
+    environment:
+      - POSTGRES_DB=test_project
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgres
+    ports:
+      - 5432:5432
+    volumes:
+      - ./database/test_project:/var/lib/postgresql/data

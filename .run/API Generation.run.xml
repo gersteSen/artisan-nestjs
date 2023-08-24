@@ -1,0 +1,27 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="API Generation" type="SwaggerCodegen">
+    <option name="customTemplatesPath" value="" />
+    <option name="generateToPath" value="C:\Users\it_ge\Workspace\tests\nest-test\frontend\src\_generated" />
+    <option name="generationParameters">
+      <list>
+        <CliArgumentViewModel>
+          <option name="name" value="serviceSuffix" />
+          <option name="value" value="Service" />
+        </CliArgumentViewModel>
+        <CliArgumentViewModel>
+          <option name="name" value="enumPropertyNaming" />
+          <option name="value" value="PascalCase" />
+        </CliArgumentViewModel>
+        <CliArgumentViewModel>
+          <option name="name" value="apiModulePrefix" />
+          <option name="value" value="" />
+        </CliArgumentViewModel>
+      </list>
+    </option>
+    <option name="generatorType" value="OPENAPI_GENERATOR_V6" />
+    <option name="jdkPath" value="C:\Users\it_ge\AppData\Local\JetBrains\Toolbox\apps\Rider\ch-0\232.8660.212\jbr\bin\java.exe" />
+    <option name="language" value="typescript-angular" />
+    <option name="specificationPath" value="C:\Users\it_ge\Workspace\tests\nest-test\api\swagger-spec.json" />
+    <method v="2" />
+  </configuration>
+</component>
