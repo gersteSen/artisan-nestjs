@@ -1,7 +1,11 @@
 <component name="ProjectRunConfigurationManager">
-  <configuration default="false" name="API Generation" type="SwaggerCodegen">
+  <configuration default="false" name="API Generation" type="SwaggerCodegen" show_console_on_std_err="false" show_console_on_std_out="false">
+    <option name="allowRunningInParallel" value="false" />
     <option name="customTemplatesPath" value="" />
-    <option name="generateToPath" value="C:\Users\it_ge\Workspace\tests\nest-test\frontend\src\_generated" />
+    <option name="envs">
+      <map />
+    </option>
+    <option name="generateToPath" value="C:\Users\it_ge\Workspace\tests\artisan-nestjs\frontend\src\_generated" />
     <option name="generationParameters">
       <list>
         <CliArgumentViewModel>
@@ -12,16 +16,19 @@
           <option name="name" value="enumPropertyNaming" />
           <option name="value" value="PascalCase" />
         </CliArgumentViewModel>
-        <CliArgumentViewModel>
-          <option name="name" value="apiModulePrefix" />
-          <option name="value" value="" />
-        </CliArgumentViewModel>
       </list>
     </option>
     <option name="generatorType" value="OPENAPI_GENERATOR_V6" />
     <option name="jdkPath" value="C:\Users\it_ge\AppData\Local\JetBrains\Toolbox\apps\Rider\ch-0\232.8660.212\jbr\bin\java.exe" />
     <option name="language" value="typescript-angular" />
-    <option name="specificationPath" value="C:\Users\it_ge\Workspace\tests\nest-test\api\swagger-spec.json" />
+    <option name="passParentEnvs" value="true" />
+    <option name="programParameters" />
+    <option name="projectPathOnTarget" />
+    <option name="selectedOptions">
+      <list />
+    </option>
+    <option name="specificationPath" value="C:\Users\it_ge\Workspace\tests\artisan-nestjs\api\swagger-spec.json" />
+    <option name="workingDirectory" value="C:\Users\it_ge\Workspace\tests\artisan-nestjs\api" />
     <method v="2" />
   </configuration>
 </component>
