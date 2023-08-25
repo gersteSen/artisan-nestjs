@@ -5,7 +5,7 @@
     <option name="envs">
       <map />
     </option>
-    <option name="generateToPath" value="C:\Users\it_ge\Workspace\tests\nest-test\frontend\src\_generated" />
+    <option name="generateToPath" value="C:\Users\it_ge\Workspace\tests\artisan-nestjs\frontend\src\_generated" />
     <option name="generationParameters">
       <list>
         <CliArgumentViewModel>
@@ -15,10 +15,6 @@
         <CliArgumentViewModel>
           <option name="name" value="enumPropertyNaming" />
           <option name="value" value="PascalCase" />
-        </CliArgumentViewModel>
-        <CliArgumentViewModel>
-          <option name="name" value="apiModulePrefix" />
-          <option name="value" value="" />
         </CliArgumentViewModel>
       </list>
     </option>
@@ -31,8 +27,8 @@
     <option name="selectedOptions">
       <list />
     </option>
-    <option name="specificationPath" value="C:\Users\it_ge\Workspace\tests\nest-test\api\swagger-spec.json" />
-    <option name="workingDirectory" value="C:\Users\it_ge\Workspace\tests\nest-test\api" />
+    <option name="specificationPath" value="C:\Users\it_ge\Workspace\tests\artisan-nestjs\api\swagger-spec.json" />
+    <option name="workingDirectory" value="C:\Users\it_ge\Workspace\tests\artisan-nestjs\api" />
     <method v="2" />
   </configuration>
 </component>
