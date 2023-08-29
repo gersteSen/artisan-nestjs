@@ -5,6 +5,7 @@ import { ConfigModule } from '@nestjs/config';
 import { databaseConfig } from './config/database.config';
 import { TypeOrmModule } from '@nestjs/typeorm';
 import { PostgresDBService } from './config/databaseConfig.service';
+import { UserModule } from './user/user.module';
 
 @Module({
   //https://dev.to/raphael_haecker/nestjs-and-typeorm-database-configuration-15ob
@@ -15,7 +16,8 @@ import { PostgresDBService } from './config/databaseConfig.service';
     TypeOrmModule.forRootAsync({
       useClass: PostgresDBService,
       inject: [PostgresDBService]
-    })
+    }),
+    UserModule
   ],
   controllers: [AppController],
   providers: [AppService]

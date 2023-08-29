@@ -13,6 +13,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="HTTP Request" />
+        <option value="HTTP Public Environment File" />
         <option value="TypeScript File" />
       </list>
     </option>
@@ -20,50 +22,79 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="include-Config-Module" />
+        <entry key="$PROJECT_DIR$" value="main" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HttpClientSelectedEnvironments">
+    <file url="file://$USER_HOME$/AppData/Local/Temp/whats-new-dir/whats-new.http" environment="test" />
+    <file url="file://$PROJECT_DIR$/api/UserTest.http" environment="development" />
+    <file url="jar://$APPLICATION_HOME_DIR$/plugins/restClient/lib/restClient.jar!/com/intellij/ws/rest/client/requests/collection/get-requests.http" environment="test" />
+    <file url="jar://$APPLICATION_HOME_DIR$/plugins/restClient/lib/restClient.jar!/com/intellij/ws/rest/client/requests/collection/post-requests.http" environment="test" />
+    <file url="jar://$APPLICATION_HOME_DIR$/plugins/restClient/lib/restClient.jar!/com/intellij/ws/rest/client/requests/collection/requests-with-tests.http" environment="test" />
   </component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 3
 }</component>
   <component name="ProjectId" id="2USxLtbQE1LU8JNE5T9MUTWVLj5" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "main",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "prettierjs.PrettierConfiguration.Package": "C:\\Users\\it_ge\\Workspace\\tests\\artisan-nestjs\\api\\node_modules\\prettier",
-    "settings.editor.selected.configurable": "settings.javascript.prettier",
-    "ts.external.directory.path": "C:\\Users\\it_ge\\Workspace\\tests\\artisan-nestjs\\frontend\\node_modules\\typescript\\lib",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;add-resources-and-models&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;prettierjs.PrettierConfiguration.Package&quot;: &quot;C:\\Users\\it_ge\\Workspace\\tests\\artisan-nestjs\\api\\node_modules\\prettier&quot;,
+    &quot;rest.client.default.execution.environment&quot;: &quot;development&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;settings.javascript.prettier&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;C:\\Users\\it_ge\\Workspace\\tests\\artisan-nestjs\\frontend\\node_modules\\typescript\\lib&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "GitStage.ChangesTree.GroupingKeys": [
-      "directory",
-      "module",
-      "repository"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;postgresql&quot;
     ],
-    "rider.external.source.directories": [
-      "C:\\Users\\it_ge\\AppData\\Roaming\\JetBrains\\Rider2023.2\\resharper-host\\DecompilerCache",
-      "C:\\Users\\it_ge\\AppData\\Roaming\\JetBrains\\Rider2023.2\\resharper-host\\SourcesCache",
-      "C:\\Users\\it_ge\\AppData\\Local\\Symbols\\src"
+    &quot;GitStage.ChangesTree.GroupingKeys&quot;: [
+      &quot;directory&quot;,
+      &quot;module&quot;,
+      &quot;repository&quot;
+    ],
+    &quot;rider.external.source.directories&quot;: [
+      &quot;C:\\Users\\it_ge\\AppData\\Roaming\\JetBrains\\Rider2023.2\\resharper-host\\DecompilerCache&quot;,
+      &quot;C:\\Users\\it_ge\\AppData\\Roaming\\JetBrains\\Rider2023.2\\resharper-host\\SourcesCache&quot;,
+      &quot;C:\\Users\\it_ge\\AppData\\Local\\Symbols\\src&quot;
     ]
   }
-}]]></component>
-  <component name="RunManager" selected="OpenAPI/Swagger Code Generator.API Generation">
+}</component>
+  <component name="RunManager" selected="npm.API start Dev">
+    <configuration name="All in UserTest" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$PROJECT_DIR$/api/UserTest.http">
+      <method v="2" />
+    </configuration>
+    <configuration name="UserTest | GET All Users" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/api/UserTest.http" requestIdentifier="GET All Users" runType="Run single request">
+      <method v="2" />
+    </configuration>
+    <configuration name="UserTest | GET last user" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/api/UserTest.http" index="3" requestIdentifier="GET last user" runType="Run single request">
+      <method v="2" />
+    </configuration>
+    <configuration name="UserTest | PATCH last user" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/api/UserTest.http" index="4" requestIdentifier="PATCH last user" runType="Run single request">
+      <method v="2" />
+    </configuration>
+    <configuration name="UserTest | POST Create a new User" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/api/UserTest.http" index="2" requestIdentifier="POST Create a new User" runType="Run single request">
+      <method v="2" />
+    </configuration>
     <configuration name="API start Dev" type="js.build_tools.npm">
       <package-json value="$PROJECT_DIR$/api/package.json" />
       <command value="run" />
@@ -85,10 +116,24 @@
       <method v="2" />
     </configuration>
     <list>
+      <item itemvalue="HTTP Request.All in UserTest" />
+      <item itemvalue="HTTP Request.UserTest | GET last user" />
+      <item itemvalue="HTTP Request.UserTest | PATCH last user" />
+      <item itemvalue="HTTP Request.UserTest | GET All Users" />
+      <item itemvalue="HTTP Request.UserTest | POST Create a new User" />
       <item itemvalue="npm.Generate API File" />
       <item itemvalue="npm.API start Dev" />
       <item itemvalue="OpenAPI/Swagger Code Generator.API Generation" />
     </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="HTTP Request.All in UserTest" />
+        <item itemvalue="HTTP Request.UserTest | PATCH last user" />
+        <item itemvalue="HTTP Request.UserTest | GET All Users" />
+        <item itemvalue="HTTP Request.UserTest | POST Create a new User" />
+        <item itemvalue="HTTP Request.UserTest | GET last user" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -101,7 +146,12 @@
       <workItem from="1692946733940" duration="51000" />
       <workItem from="1692947750548" duration="737000" />
       <workItem from="1692948512569" duration="2739000" />
-      <workItem from="1692951283631" duration="170000" />
+      <workItem from="1692951283631" duration="239000" />
+      <workItem from="1692965108958" duration="2066000" />
+      <workItem from="1692967226441" duration="390000" />
+      <workItem from="1693202739719" duration="3831000" />
+      <workItem from="1693220781835" duration="1654000" />
+      <workItem from="1693286955793" duration="7608000" />
     </task>
     <task id="LOCAL-00001" summary="Include TypeormModule and ConfigModule">
       <option name="closed" value="true" />
@@ -119,7 +169,15 @@
       <option name="project" value="LOCAL" />
       <updated>1692951350130</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Update jetbrain config">
+      <option name="closed" value="true" />
+      <created>1692951497776</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1692951497776</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -141,6 +199,7 @@
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value="Include TypeormModule and ConfigModule" />
     <MESSAGE value="Update jetbrain commands" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update jetbrain commands" />
+    <MESSAGE value="Update jetbrain config" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update jetbrain config" />
   </component>
 </project>

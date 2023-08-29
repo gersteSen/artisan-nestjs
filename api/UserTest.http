@@ -1,0 +1,83 @@
+﻿### GET All Users
+GET {{host}}/api/user
+Accept: application/json
+
+> {%
+    client.test("Get All Users", function() {
+        client.assert(response.status === 200, "Response status is not 200");
+    });
+%}
+
+### POST Create a new User
+POST {{host}}/api/user
+Accept: application/json
+Content-Type: application/json
+
+{
+  "firstname": "Tobias",
+  "familyname": "Gerstenecker",
+  "email": "tobias@gerste.de",
+  "birthday": "2023-08-29T06:04:47.972Z",
+  "datevMaNumber": 0,
+  "wochenarbeitstage": 5,
+  "urlaubstage": 25,
+  "sollArbeitszeit": 40,
+  "eintrittsdatum": "2023-08-29T06:04:47.972Z",
+  "austrittsdatum": "2023-08-29T06:04:47.972Z",
+  "state": "active"
+}
+
+> {%
+    client.global.set("userId", response.body.id);
+
+client.test("Request executed successfully", function() {
+  client.assert(response.status === 201, "Response status is not 201");
+});
+%}
+
+### GET last user
+# @no-redirect
+GET {{host}}/api/user/{{userId}}
+Accept: application/json
+
+> {%
+    client.test("Request executed successfully", function() {
+        client.assert(response.status === 200, "Response status is not 200");
+    });
+%}
+
+### PATCH last user
+# @no-redirect
+PATCH {{host}}/api/user/{{userId}}
+Accept: application/json
+Content-Type: application/json
+
+{
+  "firstname": "Tobias 1",
+  "familyname": "Gerstenecker 2",
+  "email": "tobias@gerste.de",
+  "birthday": "2023-08-29T06:04:47.972Z",
+  "datevMaNumber": 0,
+  "wochenarbeitstage": 5,
+  "urlaubstage": 25,
+  "sollArbeitszeit": 40,
+  "eintrittsdatum": "2023-08-29T06:04:47.972Z",
+  "austrittsdatum": "2023-08-29T06:04:47.972Z",
+  "state": "active"
+}
+
+> {%
+    client.test("Request executed successfully", function() {
+        client.assert(response.status === 200, "Response status is not 200");
+    });
+%}
+
+### DELETE last user
+DELETE {{host}}/api/user/{{userId}}
+Accept: application/json
+
+> {%
+    client.test("Request executed successfully", function() {
+        client.assert(response.status === 200, "Response status is not 200");
+    });
+%}

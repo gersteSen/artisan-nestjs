@@ -1,14 +1,13 @@
 import { Injectable } from '@nestjs/common';
-import {HelloDto, HelloStatus} from "./dto/hello.dto";
+import { AliveDto, AppStatus } from './dto/aliveDto';
 
 @Injectable()
 export class AppService {
-  getHello(): HelloDto {
-    
-    const helloDto = new HelloDto();
+  getHello(): AliveDto {
+    const helloDto = new AliveDto();
     helloDto.message = 'Hello World!';
-    helloDto.status = HelloStatus.SUCCESS;
-    
+    helloDto.status = AppStatus.DEVELOPMENT;
+
     return helloDto;
   }
 }

@@ -1,3 +1,5 @@
-export * from './beschaffung.service';
-import { BeschaffungService } from './beschaffung.service';
-export const APIS = [BeschaffungService];
+export * from './app.service';
+import { AppService } from './app.service';
+export * from './user.service';
+import { UserService } from './user.service';
+export const APIS = [AppService, UserService];

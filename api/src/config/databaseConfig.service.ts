@@ -13,7 +13,11 @@ export class PostgresDBService implements TypeOrmOptionsFactory {
       port: this.configService.get<number>('DATABASE_PORT'),
       database: this.configService.get<string>('DATABASE_DB'),
       username: this.configService.get<string>('DATABASE_USER'),
-      password: this.configService.get<string>('DATABASE_PASSWORD')
+      password: this.configService.get<string>('DATABASE_PASSWORD'),
+      entities: ['dist/**/*.entity{.ts,.js}'],
+      migrationsTableName: 'migration',
+      migrations: ['src/migration/*.ts'],
+      synchronize: true
     };
   }
 }
