@@ -202,4 +202,8 @@
     <MESSAGE value="Update jetbrain config" />
     <option name="LAST_COMMIT_MESSAGE" value="Update jetbrain config" />
   </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
 </project>

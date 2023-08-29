@@ -1,11 +1,6 @@
 import { NestFactory } from '@nestjs/core';
 import { AppModule } from './app.module';
-import {
-  DocumentBuilder,
-  SwaggerDocumentOptions,
-  SwaggerModule
-} from '@nestjs/swagger';
-import * as fs from 'fs';
+import { SwaggerModule } from '@nestjs/swagger';
 import { openApiConfig } from './config/openapi-config';
 import { ValidationPipe } from '@nestjs/common';
 

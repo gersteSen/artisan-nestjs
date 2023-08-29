@@ -6,16 +6,12 @@ import {
   Patch,
   Param,
   Delete,
-  HttpException,
-  HttpStatus,
-  BadRequestException,
   ConflictException
 } from '@nestjs/common';
 import { UserService } from './user.service';
 import { CreateUserDto } from './dto/create-user.dto';
 import { UpdateUserDto } from './dto/update-user.dto';
 import { ApiCreatedResponse, ApiOkResponse, ApiTags } from '@nestjs/swagger';
-import { AliveDto } from '../dto/aliveDto';
 import { User } from './entities/user.entity';
 
 @Controller('user')

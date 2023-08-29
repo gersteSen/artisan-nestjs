@@ -1,11 +1,5 @@
 import { ApiProperty } from '@nestjs/swagger';
-import {
-  IsDate,
-  IsDateString,
-  IsEmail,
-  IsNotEmpty,
-  IsNumber
-} from 'class-validator';
+import { IsDateString, IsEmail, IsNotEmpty, IsNumber } from 'class-validator';
 import { UserState } from '../entities/user.entity';
 
 export class UpdateUserDto {

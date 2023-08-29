@@ -1,13 +1,6 @@
 import { ApiProperty } from '@nestjs/swagger';
 import { UserState } from '../entities/user.entity';
-import {
-  IsDate,
-  IsDateString,
-  IsEmail,
-  IsNotEmpty,
-  IsNumber
-} from 'class-validator';
-import { AfterLoad } from 'typeorm';
+import { IsDateString, IsEmail, IsNotEmpty, IsNumber } from 'class-validator';
 
 export class CreateUserDto {
   @ApiProperty()

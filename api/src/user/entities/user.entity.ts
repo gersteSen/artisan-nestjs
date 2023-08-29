@@ -1,10 +1,4 @@
-import {
-  AfterLoad,
-  Column,
-  Entity,
-  PrimaryGeneratedColumn,
-  Unique
-} from 'typeorm';
+import { Column, Entity, PrimaryGeneratedColumn, Unique } from 'typeorm';
 import { ApiProperty } from '@nestjs/swagger';
 
 export enum UserState {
