@@ -33,6 +33,7 @@
     <file url="jar://$APPLICATION_HOME_DIR$/plugins/restClient/lib/restClient.jar!/com/intellij/ws/rest/client/requests/collection/get-requests.http" environment="test" />
     <file url="jar://$APPLICATION_HOME_DIR$/plugins/restClient/lib/restClient.jar!/com/intellij/ws/rest/client/requests/collection/post-requests.http" environment="test" />
     <file url="jar://$APPLICATION_HOME_DIR$/plugins/restClient/lib/restClient.jar!/com/intellij/ws/rest/client/requests/collection/requests-with-tests.http" environment="test" />
+    <file url="file://$PROJECT_DIR$/api/http-client/UserTest.http" environment="development" />
   </component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
   <component name="ProjectColorInfo">{
@@ -51,6 +52,7 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;com.github.iguissouma.nxconsole.dontShowDeprecationNoticeAgain&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;add-resources-and-models&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
@@ -79,14 +81,14 @@
     ]
   }
 }</component>
-  <component name="RunManager" selected="npm.API start Dev">
+  <component name="RunManager" selected="npm.Frontend start">
+    <configuration name="All in UserTest (1)" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$PROJECT_DIR$/api/http-client/UserTest.http">
+      <method v="2" />
+    </configuration>
     <configuration name="All in UserTest" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$PROJECT_DIR$/api/UserTest.http">
       <method v="2" />
     </configuration>
     <configuration name="UserTest | GET All Users" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/api/UserTest.http" requestIdentifier="GET All Users" runType="Run single request">
-      <method v="2" />
-    </configuration>
-    <configuration name="UserTest | GET last user" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/api/UserTest.http" index="3" requestIdentifier="GET last user" runType="Run single request">
       <method v="2" />
     </configuration>
     <configuration name="UserTest | PATCH last user" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/api/UserTest.http" index="4" requestIdentifier="PATCH last user" runType="Run single request">
@@ -95,11 +97,31 @@
     <configuration name="UserTest | POST Create a new User" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/api/UserTest.http" index="2" requestIdentifier="POST Create a new User" runType="Run single request">
       <method v="2" />
     </configuration>
+    <configuration name="Start DB" type="docker-deploy" factoryName="docker-compose.yml" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="envFilePath" value="" />
+          <option name="sourceFilePath" value="docker-compose.yml" />
+        </settings>
+      </deployment>
+      <EXTENSION ID="com.jetbrains.rider.docker.debug" isFastModeEnabled="true" isSslEnabled="false" />
+      <method v="2" />
+    </configuration>
     <configuration name="API start Dev" type="js.build_tools.npm">
       <package-json value="$PROJECT_DIR$/api/package.json" />
       <command value="run" />
       <scripts>
         <script value="start:dev" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="Frontend start" type="js.build_tools.npm">
+      <package-json value="$PROJECT_DIR$/frontend/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="start" />
       </scripts>
       <node-interpreter value="project" />
       <envs />
@@ -116,22 +138,24 @@
       <method v="2" />
     </configuration>
     <list>
+      <item itemvalue="Docker.Start DB" />
+      <item itemvalue="HTTP Request.All in UserTest (1)" />
       <item itemvalue="HTTP Request.All in UserTest" />
-      <item itemvalue="HTTP Request.UserTest | GET last user" />
       <item itemvalue="HTTP Request.UserTest | PATCH last user" />
       <item itemvalue="HTTP Request.UserTest | GET All Users" />
       <item itemvalue="HTTP Request.UserTest | POST Create a new User" />
       <item itemvalue="npm.Generate API File" />
       <item itemvalue="npm.API start Dev" />
+      <item itemvalue="npm.Frontend start" />
       <item itemvalue="OpenAPI/Swagger Code Generator.API Generation" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="HTTP Request.All in UserTest (1)" />
         <item itemvalue="HTTP Request.All in UserTest" />
         <item itemvalue="HTTP Request.UserTest | PATCH last user" />
         <item itemvalue="HTTP Request.UserTest | GET All Users" />
         <item itemvalue="HTTP Request.UserTest | POST Create a new User" />
-        <item itemvalue="HTTP Request.UserTest | GET last user" />
       </list>
     </recent_temporary>
   </component>
@@ -152,6 +176,10 @@
       <workItem from="1693202739719" duration="3831000" />
       <workItem from="1693220781835" duration="1654000" />
       <workItem from="1693286955793" duration="7608000" />
+      <workItem from="1693466182713" duration="89000" />
+      <workItem from="1693467341987" duration="215000" />
+      <workItem from="1693561223142" duration="4008000" />
+      <workItem from="1693567615398" duration="1747000" />
     </task>
     <task id="LOCAL-00001" summary="Include TypeormModule and ConfigModule">
       <option name="closed" value="true" />
@@ -177,7 +205,15 @@
       <option name="project" value="LOCAL" />
       <updated>1692951497776</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Update linter in API">
+      <option name="closed" value="true" />
+      <created>1693296316137</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1693296316137</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -200,7 +236,8 @@
     <MESSAGE value="Include TypeormModule and ConfigModule" />
     <MESSAGE value="Update jetbrain commands" />
     <MESSAGE value="Update jetbrain config" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update jetbrain config" />
+    <MESSAGE value="Update linter in API" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update linter in API" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
