@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import {
   eachDayOfInterval,
@@ -19,6 +19,8 @@ import { de } from 'date-fns/locale';
   styleUrls: ['./calendar.component.scss'],
 })
 export class CalendarComponent implements OnInit {
+  @Output() selectedDate: EventEmitter<Date> = new EventEmitter<Date>();
+
   today = startOfToday();
   selectedDay!: Date | null;
   month = getMonth(startOfToday());
@@ -28,10 +30,10 @@ export class CalendarComponent implements OnInit {
   });
 
   get todayWithDate() {
-    return format(this.today, 'dd. MMMM', { locale: de });
+    return format(this.today, 'dd. MMMM, yyyy', { locale: de });
   }
   get monthName() {
-    return format(this.today, 'MMMM', { locale: de });
+    return format(this.today, 'MMMM | yyyy', { locale: de });
   }
 
   formatDay(date: Date) {
@@ -77,13 +79,14 @@ export class CalendarComponent implements OnInit {
 
   selectDay(day: Date) {
     this.selectedDay = day;
+    this.selectedDate.emit(day);
   }
 
   todayOrSelectedDayWithDate() {
     if (!!this.selectedDay) {
-      return format(this.selectedDay, 'dd. MMMM', { locale: de });
+      return format(this.selectedDay, 'dd. MMMM | yyyy', { locale: de });
     } else {
-      return format(this.today, 'dd. MMMM', { locale: de });
+      return format(this.today, 'dd. MMMM | yyyy', { locale: de });
     }
   }
 }
